@@ -87,6 +87,13 @@ If you need to remove the driver:
 sudo make uninstall
 ```
 
+### Uninstalling other Drivers that you might have tried and now showing up when running sudo apt update
+
+```bash
+sudo apt-get remove <package_name>
+```
+I had to uninstall two packages that were erroring which removed the wifi adapter again. Go back to the folder on step 2 and run step 3 and 4.
+
 ## Usage
 
 Once the driver is installed and loaded, the AIC8800 chipset will be automatically recognized by the Linux system. You can verify the wireless device is working by checking the network interfaces:
