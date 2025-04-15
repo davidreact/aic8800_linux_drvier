@@ -1,4 +1,4 @@
-# AIC8800 Linux Driver
+# AIC8800 Linux Driver AX900 Wifi Adapter Linux
 
 This project provides a Linux driver for the AIC8800 chipset, supporting both USB and SDIO interfaces.
 
