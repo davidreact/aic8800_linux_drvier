@@ -9,6 +9,7 @@ This project provides a Linux driver for the AIC8800 chipset, supporting both US
 - [Installation](#installation)
   - [Compiling the Driver](#compiling-the-driver)
   - [Installing the Driver](#installing-the-driver)
+- [Uninstalling other Drivers that you might have tried and now showing up when running sudo apt update]
 - [Usage](#usage)
 - [License](#license)
 
@@ -103,6 +104,23 @@ ip link
 ```
 
 You can also manage the wireless device using standard Linux network management tools like `iwconfig`, `ifconfig`, or `nmcli`.
+
+## Change the device from USB to WIFI (not sure if you need to do this, test it with the above but if it is still not showing up then see below)
+
+First find out the vendor (-v) and product id (-p) of your modem. use the code below and plug the wifi modem.
+
+```bash
+sudo dmesg -HW
+```
+It should look something like this
+
+![image](https://github.com/user-attachments/assets/3d109db9-33a6-451f-aac0-b3dfa9dca42b)
+
+Using the above details you can change the paremeters below. You could also try lsusb as a way to see the connected devices.
+
+```bash
+sudo /usr/sbin/usb_modeswitch -KQ -v a69c -p 5723
+```
 
 ## License
 
