@@ -32,7 +32,7 @@ The AIC8800 Linux Driver supports the AIC8800 chipset for wireless communication
 
 To compile and install this driver, ensure the following dependencies are installed:
 
-- Linux kernel headers and development files
+- Linux kernel headers and development files - you need to install the kernel headers. (google how to do that)
 - GCC and Make
 - Git (for cloning the repository)
 
@@ -40,6 +40,7 @@ To compile and install this driver, ensure the following dependencies are instal
 # Fedora example
 sudo dnf install kernel-devel kernel-headers gcc make git
 ```
+
 ```bash
 # Debian
 sudo apt update
