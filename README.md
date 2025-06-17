@@ -53,7 +53,7 @@ sudo apt install linux-headers-$(uname -r) build-essential git
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/goecho/aic8800_linux_drvier.git
+   git clone https://github.com/davidreact/aic8800_linux_drvier.git
    cd aic8800_linux_drvier
    ```
 
