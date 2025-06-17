@@ -40,7 +40,11 @@ To compile and install this driver, ensure the following dependencies are instal
 # Fedora example
 sudo dnf install kernel-devel kernel-headers gcc make git
 ```
-
+```bash
+# Debian
+sudo apt update
+sudo apt install linux-headers-$(uname -r) build-essential git
+```
 ## Installation
 
 ### Compiling the Driver
@@ -48,7 +52,7 @@ sudo dnf install kernel-devel kernel-headers gcc make git
 1. Clone the repository:
 
    ```bash
-   git clone git@github.com:goecho/aic8800_linux_drvier.git
+   git clone https://github.com/goecho/aic8800_linux_drvier.git
    cd aic8800_linux_drvier
    ```
 
