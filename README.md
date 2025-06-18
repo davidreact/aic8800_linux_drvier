@@ -84,6 +84,31 @@ sudo apt install linux-headers-$(uname -r) build-essential git
    ```bash
    lsmod | grep aic8800_fdrv
    ```
+6. Check the interface is running:
+
+   ```bash
+   ip a
+   ```
+  You should see a new connection called wifi or wlx8c772b0027bc
+
+7.  Install wireless tools (like iw):
+ 
+ ```bash
+  sudo apt install wireless-tools iw wpasupplicant
+   ```
+8. Once installed bring the wifi interface up
+
+ ```bash
+sudo ip link set wlx8c772b0027bc up
+```
+
+9. Scan for WiFi networks
+
+ ```bash
+  sudo iw dev wlx8c772b0027bc scan | grep SSID
+```
+
+ 
 
 ### Uninstalling the Driver
 
