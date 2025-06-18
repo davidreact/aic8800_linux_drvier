@@ -2,6 +2,8 @@
 
 This project provides a Linux driver for the AIC8800 chipset, supporting both USB and SDIO interfaces.
 
+I have tested this with Debian 12 Bookworm and Kernel 6.1. This might not work with older kernels due to a change I made.
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
