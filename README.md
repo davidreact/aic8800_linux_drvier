@@ -2,6 +2,14 @@
 
 This project provides a Linux driver for the AIC8800 chipset, supporting both USB and SDIO interfaces.
 
+Now it is very important to know what linux kernel you have as there are differences on how things works. 
+
+Jul 01,2027 I have managed to get this adapter working with Kernel 6.0.1.49 using these steps
+
+https://github.com/davidreact/aic8800_linux_drvier/blob/main/README2.MD
+
+Below are the instructions for an older kernel 6.1
+
 I have tested this with Debian 12 Bookworm and Kernel 6.1. This might not work with older kernels due to a change I made.
 
 ## Table of Contents
